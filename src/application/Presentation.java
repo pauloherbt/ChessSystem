@@ -1,7 +1,10 @@
 package application;
 
+import chess.ChessMatch;
+
 public class Presentation {
     public static void main(String[] args) {
-        System.out.println("ai man");
+        ChessMatch match = new ChessMatch(8,8);
+        UserInterface.printBoard(match.getPieces());
     }
 }
